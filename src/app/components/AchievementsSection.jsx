@@ -13,20 +13,16 @@ const achievementsList = [
   {
     metric: "Projects",
     value: "5",
-    // postfix: "+",
   },
   {
-    prefix: "~",
+    prefix: "~ ",
     metric: "Users",
-    value: "100,000",
-  },
-  {
-    metric: "Awards",
-    value: "7",
+    value: "100",
+    postfix: "+",
   },
   {
     metric: "Years",
-    value: "5",
+    value: "3",
   },
 ];
 
@@ -40,7 +36,7 @@ const AchievementsSection = () => {
               key={index}
               className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0"
             >
-              <h2 className="text-white text-4xl font-bold flex flex-row">
+              <h2 className="text-white text-4xl font-bold font-poppins flex flex-row">
                 {achievement.prefix}
                 <AnimatedNumbers
                   includeComma
@@ -57,7 +53,7 @@ const AchievementsSection = () => {
                 />
                 {achievement.postfix}
               </h2>
-              <p className="text-[#ADB7BE] text-base">{achievement.metric}</p>
+              <p className="text-[#ADB7BE] font-poppins text-base">{achievement.metric}</p>
             </div>
           );
         })}

@@ -8,7 +8,7 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-2 font-poppins">
         <li>Node.Js</li>
         <li>MongoDB</li>
         <li>Next.Js</li>
@@ -22,7 +22,7 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-2 font-poppins">
         <li>GOA COLLEGE OF ENGINEERING, FARMAGUDI</li>
       </ul>
     ),
@@ -31,9 +31,10 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-2 font-poppins">
         <li>Google Cloud Computing Foundation</li>
         <li>Node.Js From Udemy</li>
+        <li>Data Structures and Algorithms From Udemy</li>
         <li>Android Development From Udemy</li>
       </ul>
     ),
@@ -56,7 +57,7 @@ const AboutSection = () => {
         <Image src="/images/about-image.png" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold  text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg">
+          <p className="text-base lg:text-lg font-bold">
             I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
             working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
@@ -64,7 +65,7 @@ const AboutSection = () => {
             looking to expand my knowledge and skill set. I am a team player and
             I am excited to work with others to create amazing applications.
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="flex flex-row justify-start mt-8 font-poppins">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
